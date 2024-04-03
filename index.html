@@ -1,0 +1,81 @@
+<html lang="en">
+
+  <!-- Souther Illinois Univerity -->
+  <!-- Created March 14th, 2024 -->
+  <!-- Last tested March 26th, 2024 -->
+
+  <head>
+    <!-- Setup the title -->
+    <title>[REDACTED] BIKE SHOP</title>
+
+    <!-- Add favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- Add a meta description -->
+    <meta name="description" content="We are a small shop based out of Carbondale for all of your bike needs!">
+
+    <!-- Reference the stylesheet -->
+    <link rel="stylesheet" href="./style/main.css">
+
+    <!-- Pull in Slicknav and all it needs to function -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./SlickNav/dist/slicknav.min.css" />
+    <script src="./SlickNav/dist/jquery.slicknav.min.js"></script>
+
+    <!-- This is the JS code for the rollover image to work -->
+    <script language="javascript">
+      function MouseRollover(MyImage) {
+            MyImage.src = "./images/redacted1.png";
+        }
+      function MouseOut(MyImage) {
+            MyImage.src = "./images/redacted2.png";
+        }
+    </script>
+
+  </head>
+
+  <!-- Autoplay Sneaky Snitch -->
+  <audio autoplay>
+    <source src="audio/Sneaky-Snitch(chosic.com).mp3" type="audio/mpeg">
+  </audio>
+
+  <body>
+    <!-- Use this to state the name of the shop, change the image when hovered over -->
+    <div align="center">
+      <img src="images/redacted1.png" 
+      onMouseOver="MouseRollover(this)" 
+      onMouseOut="MouseOut(this)" 
+      class="mainImg"/>
+    </div>
+
+
+    <!-- Reference the image of a PeeWee riding a bike -->
+    <img src="./images/man-biking-2838341625.gif" class="indexImg">
+
+    <!-- Simple slogan -->
+    <h3 align="center"><i>We are here for all of your bike needs!</i></h3>
+
+    <!-- Create Slicknav menu -->
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rental.html">Rentals</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="contact.html">Contacts</a></li>
+  </ul>
+
+    <script>
+      $(function(){
+        $('#menu').slicknav();
+      });
+    </script>
+
+    <!-- Create a small story about the buisness -->
+    <h2 align="center">How did we get started?</h2>
+    <p align="center">We have been a family owned buiness in the Carbondale area for several decades now, being passed down generation to generation.
+      With so many years of experience, you can bet your're in good hands!</p>
+
+    <h3 align="center"> Thank you for the visit! </p>
+
+  </body>
+</html>

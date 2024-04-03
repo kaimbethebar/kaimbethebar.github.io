@@ -1,0 +1,174 @@
+<html lang="en">
+
+  <!-- Souther Illinois Univerity -->
+  <!-- Created March 14th, 2024 -->
+  <!-- Last tested March 26th, 2024 -->
+
+    <head>
+        <!-- Setup the title -->
+        <title>[REDACTED] BIKE SHOP: SERVICES</title>
+
+        <!-- Add favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    
+        <!-- Add a meta description -->
+        <meta name="description" content="We are a small shop based out of Carbondale for all of your bike needs!">
+    
+        <!-- Reference the stylesheet -->
+        <link rel="stylesheet" href="./style/main.css">
+    
+        <!-- Pull in Slicknav and what it needs to work -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./SlickNav/dist/slicknav.min.css" />
+        <script src="./SlickNav/dist/jquery.slicknav.min.js"></script>
+
+        <!-- This is the JS code for the rollover image to work -->
+        <script language="javascript">
+            function MouseRollover(MyImage) {
+              MyImage.src = "./images/redacted1.png";
+            }
+            function MouseOut(MyImage) {
+              MyImage.src = "./images/redacted2.png";
+            }
+      </script>
+    </head>
+
+    <body>
+        <!-- Use this to state the name of the shop, change the image when hovered over -->
+        <div align="center">
+            <img src="images/redacted1.png" 
+            onMouseOver="MouseRollover(this)" 
+            onMouseOut="MouseOut(this)" 
+            class="mainImg"/>
+        </div>
+
+        <!-- Create and Start the Menu -->
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rental.html">Rentals</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+
+        <script>
+            $(function(){
+              $('#menu').slicknav();
+            });
+        </script>
+
+
+        <!-- State the purpose of this page -->
+        <h1 align="center"><u>SERVICES</u></h1>
+
+        <!-- Make a table containing the different services that are offered -->
+        <!-- Wrap in an overflow div to allow for user to scroll if table becomes too large -->
+        <div style="overflow: auto">
+            <figure>
+                <figcaption>Currently Offered</figcaption>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="left">Service Name</th>
+                            <th>Estimated Price</th>
+                            <th>Estimated Time</th>
+                            <th>Service Name</th>
+                            <th>Estimated Price</th>
+                            <th>Estimated Time</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="left">Tire Patch</td>
+                            <td>~$15</td>
+                            <td>~1 hour</td>
+                            <td class="left">Tire Change</td>
+                            <td>~$30</td>
+                            <td>~1 hour</td>
+                        </tr>
+
+                        <tr>
+                            <td class="left">Chain Repair</td>
+                            <td>~$15</td>
+                            <td>~1 hour</td>
+                            <td class="left">Chain Swap</td>
+                            <td>$30</td>
+                            <td>~1 hour</td>
+                        </tr>
+
+                        <tr>
+                            <td class="left">Paint Fix</td>
+                            <td>$15</td>
+                            <td>~1 hour</td>
+                            <td class="left">Paint Change</td>
+                            <td>~$60</td>
+                            <td>~1 day</td>
+                        </tr>
+
+                        <tr>
+                            <td class="left">Straighten Wheel</td>
+                            <td>$15</td>
+                            <td>0-1 hours</td>
+                            <td class="left">Paint Change</td>
+                            <td>~$60</td>
+                            <td>~1 day</td>
+                        </tr>
+
+                        <tr>
+                            <td class="left">Peddle Replacement</td>
+                            <td>$40</td>
+                            <td>~1 hour</td>
+                            <td class="left">Chain Lubrication</td>
+                            <td>~$10</td>
+                            <td>~1 hour</td>
+                        </tr>
+
+                        <tr>
+                            <td class="left">Brake Repair</td>
+                            <td>~$20</td>
+                            <td>~1-2 hours</td>
+                            <td class="left">Brake Replacement</td>
+                            <td>~$50</td>
+                            <td>~1-2 hours</td>
+                        </tr>
+
+                        <tr>
+                            <td class="left">Small Welds</td>
+                            <td>~$30</td>
+                            <td>~1-2 hours</td>
+                            <td class="left">Frame Repair</td>
+                            <td>~$60</td>
+                            <td>~2-3 hours</td>
+                        </tr>
+
+                        <tr>
+                            <td class="left">Gear Oil</td>
+                            <td>~$10</td>
+                            <td>~1 hour</td>
+                            <td class="left">Gear Replacement</td>
+                            <td>~$50</td>
+                            <td>~1-2 hours</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <th>Ask for others</th>
+                        <th>Changes based on work needed</th>
+                        <th>Varies based on work load</th>
+                        <th>Ask for others</th>
+                        <th>Changes based on damage</th>
+                        <th>Varies based on work load</th>
+                    </tfoot>
+
+
+                </table>
+            </figure>
+        </div>
+
+
+        <!-- State we can rufuse if something is too badly damnaged -->
+        <h3 align="center"><u>!WE HAVE THE RIGHT TO REFUSE SERVICE!</u></h3>
+    </body>
+
+</html>

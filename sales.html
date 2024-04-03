@@ -1,0 +1,110 @@
+<html lang="en">
+
+  <!-- Souther Illinois Univerity -->
+  <!-- Created March 14th, 2024 -->
+  <!-- Last tested March 26th, 2024 -->
+
+    <head>
+        <!-- Setup the title -->
+        <title>[REDACTED] BIKE SHOP: SALES</title>
+
+        <!-- Add favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    
+        <!-- Add a meta description -->
+        <meta name="description" content="We are a small shop based out of Carbondale for all of your bike needs!">
+    
+        <!-- Reference the stylesheet -->
+        <link rel="stylesheet" href="./style/main.css">
+    
+        <!-- Pull in Slicknav and what it needs to work -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="./SlickNav/dist/slicknav.min.css" />
+        <script src="./SlickNav/dist/jquery.slicknav.min.js"></script>
+
+        <!-- This is the JS code for the rollover image to work -->
+        <script language="javascript">
+            function MouseRollover(MyImage) {
+              MyImage.src = "./images/redacted1.png";
+            }
+            function MouseOut(MyImage) {
+              MyImage.src = "./images/redacted2.png";
+            }
+      </script>
+    </head>
+
+    <body>
+        <!-- Use this to state the name of the shop, change the image when hovered over -->
+        <div align="center">
+            <img src="images/redacted1.png" 
+            onMouseOver="MouseRollover(this)" 
+            onMouseOut="MouseOut(this)" 
+            class="mainImg"/>
+        </div>
+
+        <!-- Create the Slicknav menu -->
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rental.html">Rentals</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+
+        <script>
+            $(function(){
+              $('#menu').slicknav();
+            });
+        </script>
+
+
+        <!-- State this page is for sales-->
+        <h1 align="center"><u>ITEMS FOR SALE</u></h1>
+        
+
+        <!-- Create something to contain the rows-->
+        <!-- Inside of each row, show an image of the bike, price, and other important values-->
+        <div>
+            <div class="row">
+                <img src="./images/sale1.png">
+                <p>This bike is currently on sale for $350 or the best offer.</p>
+                <ul>
+                    <li>Pink and Black</li>
+                    <li>6 Gears</li>
+                    <li>Helmet is inluded with price</li>
+                    <li>6 month warranty</li>
+                    <li>Ergonomic seat</li>
+                </ul>
+            </div>
+    
+            <div class="row">
+                <img src="./images/sale2.png">
+                <p>This bike is currently on sale for $600 or the best offer.</p>
+                <ul>
+                    <li>Black</li>
+                    <li>8 Gears</li>
+                    <li>Improved suspension</li>
+                    <li>Ergonomic seat</li>
+                    <li>Heavy duty frame</li>
+                    <li>Helmet is inluded with price</li>
+                    <li>6 month warranty</li>
+                </ul>
+            </div>
+            <div class="row">
+                <img src="./images/sale3.png">
+                <p>Basic helmet: $50</p>
+            </div>
+        </div>
+
+        <h2 align="center">One of our satisfied buyers!</h2>
+        <video controls class="center">
+            <source src="./videos/ride.mp4" type="video/mp4">
+        </video>
+
+        <!-- Say they can call or come in person to buy something -->
+        <h3 align="center"><u>!IF INTERESTED IN BUYING, CALL OR ASK IN STORE!</u></h3>
+
+    </body>
+        
+</html>
