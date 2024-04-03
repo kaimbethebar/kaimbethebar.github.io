@@ -1,0 +1,227 @@
+html {
+  padding:10px;
+  background-color: #fce8ca;
+}
+
+h1, h2, h3 {
+  padding:10px;
+}
+
+p {
+  padding: 0 5 0 5px;
+}
+
+body {
+  width:725px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding:10px;
+  background-color: #f1c583 ;
+  border-radius: 10px;
+  font-size: 18;
+}
+
+/* Table information */
+table {
+  border: 1px solid black;
+  border-collapse: collapse; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  font-size: 120%;
+  padding-bottom: .25em; }
+  
+th, td {
+  border: 1px solid black;
+  padding: .2em .7em;
+  text-align: right; 
+}
+
+th {
+  background-color:mediumpurple;
+}
+
+td {
+  background-color:cornflowerblue;
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+/* This is for the main image on the index page */
+.indexImg {
+  display: block;
+  position: static;
+  left: auto;
+  right: auto;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  border-radius:30px;
+  border: 3px solid black;
+}
+
+.mainImg {
+  max-width: 90%;
+  border-radius:40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding:0;
+}
+
+.center {
+  display: block;
+  position: static;
+  left: auto;
+  right: auto;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+/* This is used to create to a column on the rent page */
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 10px;
+  height:auto;
+  text-align:center;
+  background-color:rgb(128, 137, 219);
+}
+
+/* This is to format images inside of columns */
+.column img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  max-height:150px;
+  min-height:149px;
+}
+
+/* This Creates a row */
+.row {
+  float:left;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align:left;
+  background-color:rgb(128, 137, 219);
+  border-radius: 5px;
+}
+
+/* Properly formats images inside of rows */
+.row img{
+  float:left;
+  padding:15px;
+  margin-right: 8px;
+  max-width: 50%;
+}
+
+/* Format the menu bar when large screen */
+#menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+/* Make image buttons look better */
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+  background-color: #302b2b;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding:5px;
+  display: block;
+}
+
+/* Change the color of button when hovered over */
+a:hover {
+  background-color:black;
+}
+
+/* By default, hide slicknav menu */
+.slicknav_menu {
+    display:none;
+}
+
+/* 
+If a screen is smaller than the body size and it's padding, reformat the page.
+This includes hiding the normal menu and replacing it with slicknav,
+removing column padding/margains, padding extra padding to certain elements,
+change in font size, and removing roundness on corners
+*/
+@media only screen and (max-width:775px) {
+  html {
+    padding:0px;
+    background-color: #f1c583 ;
+  }
+
+  body {
+    width:100%;
+    height: 100%;
+    padding:0px 0px 10px 0px;
+    border-radius: 0;
+    margin:0px;
+    font-size: 18;
+  }
+
+  p {
+    padding:10px;
+  }
+
+  #menu {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+
+  .row {
+    border-radius: 0px;
+  }
+
+  figure, figcaption {
+    margin: 0;
+    padding: 0; 
+  }
+  
+  figure {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  figcaption {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 120%;
+    padding-bottom: .25em; 
+  }
+  
+  table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 10px auto; 
+    max-width: 100%;
+  }
+
+  tr, th, td {
+    padding: auto;
+    margin: auto;
+  }
+}
