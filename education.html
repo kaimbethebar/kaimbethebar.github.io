@@ -5,36 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education | Portfolio</title>
     <link rel="stylesheet" href="./style/main.css">
+
+    <!-- Pull in Slicknav and all it needs to function -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./SlickNav/dist/slicknav.min.css" />
+    <script src="./SlickNav/dist/jquery.slicknav.min.js"></script>
+
+    <!-- Start slicknav -->
+    <script>
+        $(function(){
+          $('#menu').slicknav();
+        });
+      </script>
 </head>
 <body>
     <header>
+        <!-- State the purpose of this page as well as setup the links to different parts of the site -->
         <h1>Educational History</h1>
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="code.html">Code</a></li>
-                <li><a href="writing.html">Writing</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="writing.html">Writing/Art</a></li>
+                <li><a href="contact.html">Contacts</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Give a run down of my time here at SIU -->
         <section>
             <h2>Current Education</h2>
             <p>I have been attending SIUC for soon to be 3 years and working on getting a degree in IT. My GPA has remained almost perfect, currently standing at 3.9.</p>
         </section>
 
+        <!-- Talk about my past eduacation prior to attending SIU -->
         <section>
             <h2>Past Education</h2>
-            <p>I attended CCHS and was able to maining an above 4.0 weighred GPA throughout, taking college level statistics and contemporary mathmatics.</p>
-            <p>Prior to this, I attending Unity Point School through Pre-K all the way to 8th grade, where I graducated with overall good grades.</p>
+            <p>
+                I attended CCHS and was able to maining an above 4.0 weighred GPA throughout, taking college level statistics and contemporary mathmatics.<br>
+                Prior to this, I attending Unity Point School through Pre-K all the way to 8th grade, where I graducated with overall good grades.
+            </p>
         </section>
 
+        <!-- State the awards that I have eared throughout time, showing this inside of a table -->
         <section>
             <h2>Educational Awards</h2>
-            <p>The awards I have gootten through high school and college consist of the following:</p>
+            <p>
+                The awards I have gotten through high school and college consist of the following:
+            </p>
+            
+            <table>
+                <tr>
+                    <th>Year</th>
+                    <th>Award</th>
+                </tr>
+                <tr>
+                    <td>2024-2022</td>
+                    <td>Honors, Dean's List</th>
+                </tr>
+                <tr>
+                    <td>2018-2022</td>
+                    <td>Honors</td>
+                </tr>
+            </table>
         </section>
     </main>
 

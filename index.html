@@ -5,27 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Portfolio</title>
     <link rel="stylesheet" href="./style/main.css">
+
+    <!-- Pull in Slicknav and all it needs to function -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./SlickNav/dist/slicknav.min.css" />
+    <script src="./SlickNav/dist/jquery.slicknav.min.js"></script>
+
+    <!-- This is used to start slicknav -->
+    <script>
+        $(function(){
+          $('#menu').slicknav();
+        });
+      </script>
 </head>
 <body>
     <header>
+        <!-- State the title of this page -->
         <h1>Welcome to My Portfolio</h1>
+
+        <!-- Create the links to the different pages of the website -->
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="code.html">Code</a></li>
-                <li><a href="writing.html">Writing</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="writing.html">Writing/Art</a></li>
+                <li><a href="contact.html">Contacts</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Make this section to talk about who I am and give basic background knowledge of everything -->
         <section>
-            <h2>About Me</h2>
-            <p>I am currently a sophmore attending Southern Illinois University Carbondale working on obtaining a degree in IT.</p>
+            <h2>Who am I?</h2>
+            <p>
+                My name is Jesse but online I usually either go by the name of Kai, which I gained from high school German class, or Nicolaas.<br>
+                Currently I am attending Southern Illinois Univertisty working on getting a degree in, currently, general information technology.<br>
+            </p>
         </section>
 
+        <!-- Give a basic break down of what this website is for and about -->
         <section>
             <h2>Purpose of this Website</h2>
             <p>This is meant to be used as a means of showing projects that I have working on, either personally or in an acedemic setting.</p>

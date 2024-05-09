@@ -4,10 +4,24 @@ body, h1, h2, h3, p, ul {
     padding: 0;
 }
 
+html {
+    background-color: #e2ccdd;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #d4d4d4;
+    width: 900px;
+    margin: 0 auto 0 auto;
+    border-radius: 0 0 30px 30px;
+    border-left: black solid;
+    border-right: black solid;
+    border-bottom: black solid;
+}
+
+footer {
+    border-radius: 0 0 26px 26px;
 }
 
 header {
@@ -21,18 +35,9 @@ header h1 {
     margin-bottom: 10px;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
 nav ul li {
     display: inline;
     margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
 }
 
 main {
@@ -50,11 +55,115 @@ footer {
     text-align: center;
 }
 
+table, tr, th, td {
+    padding:5px;
+    border: black solid;
+    border-collapse: collapse;
+}
+
+label, input {
+    margin:0 auto;
+}
+
 .row {
     max-width:85%;
     margin:10px auto 10px auto;
     padding:10px 5px 10px 5px;
     text-align:left;
+    border-radius: 10px;
     border:black solid;
     background-color: #8a8a8a;
+    overflow: hidden;
+}
+
+.row img {
+    padding:0px 10px 0px 5px;
+    margin: 0;
+    max-width: 35%;
+    float:left;
+}
+
+.form {
+    max-width:85%;
+    margin:10px auto 10px auto;
+    padding:10px 5px 10px 5px;
+    text-align:center;
+    border-radius: 10px;
+    border:black solid;
+    background-color: #8a8a8a;
+    overflow: hidden;
+}
+
+/* Format the menu bar when large screen */
+#menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+  }
+  
+  /* Make image buttons look better */
+  a:link, a:visited {
+    text-decoration: none;
+    color: white;
+    background-color: #302b2b;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding:5px;
+    display: block;
+  }
+  
+  /* Change the color of button when hovered over */
+  a:hover {
+    background-color:black;
+  }
+  
+  /* By default, hide slicknav menu */
+  .slicknav_menu {
+      display:none;
+  }
+
+
+@media screen and (max-width:1100px) {
+    html {
+        padding:0px;
+        background-color: #d4d4d4 ;
+    }
+
+    body {
+        width:100%;
+        height: 100%;
+        padding:0px 0px 10px 0px;
+        border-radius: 0;
+        margin:0px;
+        font-size: 19;
+        border: none;
+    }
+
+    footer {
+        border-radius: 0;
+    }
+
+    p {
+        padding:10px;
+    }
+
+    .row {
+        max-width: 95%;
+    }
+
+    .row img {
+        max-width: 50%;
+    }
+
+    .form {
+        max-width: 95%;
+    }
+
+    #menu {
+            display:none;
+        }
+        
+        .slicknav_menu {
+            display:block;
+        }
 }
