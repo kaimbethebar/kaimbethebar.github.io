@@ -5,31 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Portfolio</title>
     <link rel="stylesheet" href="./style/main.css">
+
+    <!-- Pull in Slicknav and all it needs to function -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./SlickNav/dist/slicknav.min.css" />
+    <script src="./SlickNav/dist/jquery.slicknav.min.js"></script>
+
+    <!-- Start Slicknav -->
+    <script>
+        $(function(){
+          $('#menu').slicknav();
+        });
+      </script>
 </head>
 <body>
     <header>
+        <!-- State the purpose of this page and link the others -->
         <h1>Contact Me</h1>
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="code.html">Code</a></li>
-                <li><a href="writing.html">Writing</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="writing.html">Writing/Art</a></li>
+                <li><a href="contact.html">Contacts</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- State where I can be reached and provide my Discord -->
         <section>
-            <h2>About Me</h2>
-            <p>I am currently a sophmore attending Southern Illinois University Carbondale working on obtaining a degree in IT.</p>
+            <h2 align="center">Contact Info</h2>
+            <p align="center">
+                The main ways that I can be contacted are either through my college email, which if applicable can be found, or through Discord.<br>
+                Disc: kaithebar
+            </p>
         </section>
 
-        <section>
-            <h2>Purpose of this Website</h2>
-            <p>This is meant to be used as a means of showing projects that I have working on, either personally or in an acedemic setting.</p>
-        </section>
+        <!-- Create a form that asks for the persons contact information, a message from them, and ask for the reason for them reaching out -->
+        <div class="form">
+            <form name="myform" action="formResult.html" method="get">
+  
+                <div class="form">
+                    <h2>Personal Info</h2>
+        
+                    <label for="email">Email address:</label>
+                    <input type="email" name="email" id="email" required placeholder="######@gmail.com"><br>
+        
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" name="phone" id="phone" required placeholder="###-###-####" pattern="\d{10}" title="10 digits"><br>
+
+                    <label for="fullname">Name:</label>
+                    <input type="text" name="name" id="name" required placeholder="John Johnson Jones"><br>
+        
+                    <label for="date">Date:</label>
+                    <input type="text" name="date" id="date" required placeholder="##-##-##" pattern="\d{6}"><br>
+                    </div>
+        
+                    <div class="form">
+                    <h2>Message:</h2>
+                    <input type="text" name="message" id="message" class="message" minlength="50" maxlength="200" required placeholder="50-200 characters" title="Between 50-200 characters"><br>
+                </div>
+    
+                <div class="form">
+                    <h2>Reason for Form:</h2>
+        
+                    <label for="personal">Personal Reasons:</label>
+                    <input type="checkbox" name="personal" id="personal"><br>
+                    
+                    <label for="scholastic">Scholastic Reasons:</label>
+                    <input type="checkbox" name="scholastic" id="scholastic"><br>
+        
+                    <label for="review">Review:</label>
+                    <input type="checkbox" name="review" id="review"><br>
+                </div>
+  
+                <h2>!Thank you for filling out the form!</h2>
+                <input type="submit" name="button" id="button" value="Submit">
+                <input type="reset" name="reset" id="reset"> 
+            </form>
+        </div>
     </main>
 
     <footer>

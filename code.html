@@ -5,25 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code | Portfolio</title>
     <link rel="stylesheet" href="./style/main.css">
+
+    <!-- Pull in Slicknav and all it needs to function -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./SlickNav/dist/slicknav.min.css" />
+    <script src="./SlickNav/dist/jquery.slicknav.min.js"></script>
+
+    <!-- Start Slicknav -->
+    <script>
+        $(function(){
+          $('#menu').slicknav();
+        });
+      </script>
 </head>
 <body>
+    <!-- State the purpose of this page and link the others -->
     <header>
         <h1>Coding Examples</h1>
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="code.html">Code</a></li>
-                <li><a href="writing.html">Writing</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="writing.html">Writing/Art</a></li>
+                <li><a href="contact.html">Contacts</a></li>
             </ul>
+        </nav>
     </header>
 
-    <dir style="margin: 0; padding: 0;">
-        <dir class="row">
-            This is a test
-        </dir>
-    </dir>
+    <main>
+        <!-- Make a container for the rows -->
+        <div style="margin: 0; padding: 0;">
+            <!-- Inside of this row, explain my NixOS configuration and give a screenshot of the code -->
+            <div class="row">
+                <img src="./image/NixOS.png">
+
+                <h2>NixOS Configuration</h2>
+                <p>
+                    This project was made for fun whenever I wasn't working on homework during my sophomore year of university.<br>
+                    My reasoning for working on this project was so that I am able to make an easily reproducible system.<br>
+                    This was done by making use of the NixOS distribution of Linux, as well as the Nix programming language.<br>
+                    While it didn't serve a professional use, it could be used to reproduce a system with my other configurations and applications.<br>
+                </p>
+            </div>
+
+            <!-- Inside of this row, explain my waybar configuration and give a screenshot of the code -->
+            <div class="row">
+                <img src="./image/waybar.png">
+
+                <h2>Waybar Configuration</h2>
+                <p>
+                    This project was done for fun but also as a means of streamlining my productivity while using Wayland display mangers.<br>
+                    I had to learn how to use both CSS as well as work with the Waybar system, attempting to create something clean and streamlined.<br>
+                    This project also ended with me having to understand how to get it to work with external programs, such as Hyprland or Sway.<br>
+                    At the end of the project, this helped me understand styling, balancing form with function, and making programs function together.<br>
+                </p>
+            </div>
+        </div>
+
+        <!-- Provide a link to my github -->
+        <a href="https://github.com/kaimbethebar" style="text-align: center;">Find the code here!</a>
+    </main>
 
     <footer>
         <p>&copy; 2024 Portfolio. All rights reserved.</p>
