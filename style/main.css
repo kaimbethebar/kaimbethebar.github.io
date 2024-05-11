@@ -25,16 +25,6 @@ body {
     border-bottom: black solid;
 }
 
-footer {
-    border-radius: 0 0 26px 26px;
-
-}
-
-/* make the footer curve with the body */
-footer {
-    border-radius: 0 0 26px 26px;
-}
-
 /* Set background color, font color, and font alignment */
 header {
     background-color: #333;
@@ -48,20 +38,12 @@ header h1 {
     margin-bottom: 10px;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-
+/* Add padding to main */
 main {
     padding: 20px;
 }
 
+/* Add space between the magin and what's underneath it */
 section {
     margin-bottom: 30px;
 }
@@ -72,36 +54,23 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    border-radius: 0 0 26px 26px;
 }
 
-table, tr, th, td {
-    padding:5px;
-    border: black solid;
-    border-collapse: collapse;
-}
-
+/* Place the label and inputs in the middle of the form */
 label, input {
     margin:0 auto;
 }
 
+/* Place headers and content in the middle of the page */
 h2, p {
     text-align: center;
 }
 
+/* Make ordered lists and their contents be in the middle of the site */
 ol, ol li {
     text-align: center;
     list-style-position: inside;
-}
-
-.row {
-    max-width:85%;
-    margin:10px auto 10px auto;
-    padding:10px 5px 10px 5px;
-    text-align:left;
-    border-radius: 10px;
-    border:black solid;
-    background-color: #8a8a8a;
-
 }
 
 /* Format a table to look correct and have collapsing borders */
@@ -115,10 +84,6 @@ table, tr, th, td {
 /* Make labels and inputs be aligned in the center of the website */
 label, input {
     margin:0 auto;
-}
-
-ol {
-    list-style-position: inside;
 }
 
 /* Set values to keep the "logo" the proper size with a border */
@@ -171,13 +136,6 @@ ol {
 
 .columnRight h2, p {
     text-align: center;
-}
-
-.row img {
-    padding:0px 10px 0px 5px;
-    margin: 0;
-    max-width: 35%;
-    float:left;
 }
 
 /* Set a proper width for the form, provide padding, margin, text alignnment, and hide overflow */
