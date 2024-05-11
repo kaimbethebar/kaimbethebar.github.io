@@ -4,50 +4,35 @@ body, h1, h2, h3, p, ul {
     padding: 0;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
 /* Set a background color for everything besides body */
-=======
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
+
 html {
     background-color: #e2ccdd;
 }
 
-<<<<<<< HEAD
+
 /* Define the font, width of the body, borders, margins, and text alignment */
->>>>>>> Stashed changes
-=======
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #d4d4d4;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
+
     width: 900px;
     margin: 0 auto 0 auto;
     border-radius: 0 0 30px 30px;
     border-left: black solid;
     border-right: black solid;
     border-bottom: black solid;
-<<<<<<< HEAD
-    text-align: center;
-=======
 }
 
 footer {
     border-radius: 0 0 26px 26px;
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
+
 }
 
 /* make the footer curve with the body */
 footer {
     border-radius: 0 0 26px 26px;
->>>>>>> Stashed changes
 }
 
 /* Set background color, font color, and font alignment */
@@ -63,29 +48,16 @@ header h1 {
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 nav ul {
     list-style-type: none;
 }
 
-=======
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
 nav ul li {
     display: inline;
     margin-right: 20px;
 }
 
-<<<<<<< HEAD
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
 
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
 main {
     padding: 20px;
 }
@@ -102,9 +74,6 @@ footer {
     text-align: center;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
 table, tr, th, td {
     padding:5px;
     border: black solid;
@@ -115,7 +84,6 @@ label, input {
     margin:0 auto;
 }
 
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
 .row {
     max-width:85%;
     margin:10px auto 10px auto;
@@ -124,9 +92,9 @@ label, input {
     border-radius: 10px;
     border:black solid;
     background-color: #8a8a8a;
-<<<<<<< HEAD
+
 }
-=======
+
 /* Format a table to look correct and have collapsing borders */
 table, tr, th, td {
     padding:5px;
@@ -196,11 +164,6 @@ ol {
     text-align: center;
 }
 
-/* Set a proper width for the form, provide padding, margin, text alignnment, and hide overflow */
-=======
-    overflow: hidden;
-}
-
 .row img {
     padding:0px 10px 0px 5px;
     margin: 0;
@@ -208,7 +171,7 @@ ol {
     float:left;
 }
 
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
+/* Set a proper width for the form, provide padding, margin, text alignnment, and hide overflow */
 .form {
     max-width:85%;
     margin:10px auto 10px auto;
@@ -249,22 +212,15 @@ ol {
   }
 
 
-<<<<<<< HEAD
   /* If the user's screen is under 1100px, give them a mobile friendly layout with slicknav */
 @media screen and (max-width:1100px) {
     /* make the HTML background look the same as the body background */
-=======
-@media screen and (max-width:1100px) {
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
     html {
         padding:0px;
         background-color: #d4d4d4 ;
     }
 
-<<<<<<< HEAD
     /* Make the body as wide as the website, set margin to 0, make font larger, no borders */
-=======
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
     body {
         width:100%;
         height: 100%;
@@ -275,23 +231,16 @@ ol {
         border: none;
     }
 
-<<<<<<< HEAD
     /* Remove the border radius from the footer */
-=======
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
     footer {
         border-radius: 0;
     }
 
-<<<<<<< HEAD
     /* Add more padding to improve readability */
-=======
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
     p {
         padding:10px;
     }
 
-<<<<<<< HEAD
     /* Make the column into a row so that it is easier to read for the user */
     .columnLeft {
         max-width:95%;
@@ -330,24 +279,13 @@ ol {
     }
 
     /* Make the form have more room, making it easier to use for the user */
-=======
-    .row {
-        max-width: 95%;
-    }
-
-    .row img {
-        max-width: 50%;
-    }
-
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
     .form {
         max-width: 95%;
     }
 
-<<<<<<< HEAD
+
     /* Make Slicknav us the mobile drop menu */
-=======
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
+
     #menu {
             display:none;
         }
@@ -356,7 +294,4 @@ ol {
             display:block;
         }
 }
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
+
