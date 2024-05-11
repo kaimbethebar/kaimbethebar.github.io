@@ -5,6 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writing | Portfolio</title>
     <link rel="stylesheet" href="./style/main.css">
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+</head>
+<body>
+    <header>
+        <h1>Writing Examples</h1>
+=======
+    <link href="./style/print.css" media="print" rel="stylesheet">
+
+    <!-- Add a meta description -->
+    <meta name="description" content="This is the part of my portfolio about my past writing and artwork.">
+
+    <!-- This allows for main image to change is moused over -->
+    <script language="javascript">
+        function MouseRollover(MyImage) {
+              MyImage.src = "./image/the_moon.png";
+          }
+        function MouseOut(MyImage) {
+              MyImage.src = "./image/nicolaas.png";
+          }
+    </script>
+
+    <!-- Pull in Slicknav and all it needs to function -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./SlickNav/dist/slicknav.min.css" />
+    <script src="./SlickNav/dist/jquery.slicknav.min.js"></script>
+
+    <!-- Start Slicknav -->
+    <script>
+        $(function(){
+          $('#menu').slicknav();
+        });
+      </script>
+</head>
+<body>
+    <header>
+        <!-- Provide an image to act as the main "logo" -->
+        <div align="center">
+            <img src="./image/the_moon.png" 
+            onMouseOver="MouseRollover(this)" 
+            onMouseOut="MouseOut(this)" 
+            class="logo"/>
+        </div>
+
+        <!-- State what this page is for then give links to the different pages -->
+        <h1>Writing/Art Examples</h1>
+>>>>>>> Stashed changes
+=======
 
     <!-- Pull in Slicknav and all it needs to function -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -22,17 +70,55 @@
     <header>
         <!-- State what this page is for then give links to the different pages -->
         <h1>Writing/Art Examples</h1>
+>>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
         <nav>
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="code.html">Code</a></li>
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+                <li><a href="writing.html">Writing</a></li>
+=======
+                <li><a href="writing.html">Writing/Art</a></li>
+>>>>>>> Stashed changes
+                <li><a href="contact.html">Contact</a></li>
+=======
                 <li><a href="writing.html">Writing/Art</a></li>
                 <li><a href="contact.html">Contacts</a></li>
+>>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
             </ul>
     </header>
 
     <main>
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+        <section>
+            <h2>About Me</h2>
+            <p>I am currently a sophmore attending Southern Illinois University Carbondale working on obtaining a degree in IT.</p>
+        </section>
+
+        <section>
+            <h2>Purpose of this Website</h2>
+            <p>This is meant to be used as a means of showing projects that I have working on, either personally or in an acedemic setting.</p>
+        </section>
+=======
+        <!-- Create a container for the next two rows, removing its padding and margin -->
+        <div style="margin: 0; padding: 0; overflow: auto;">
+            <!-- Inside of this, talk aboutthe writing that I have done throughout the past two years while at SIU -->
+            <div class="columnLeft">
+                <h2>Scholastic Writing</h2>
+                <p>
+                    The majority of writing that I have done throughout college thus far has been research in APA format.<br>
+                    The most extensive of which has been has been done in my "Legal and Ethical Issues in IT" class.<br>
+                    This writing consisted of looking into the Boeing 373 Max crashing, Therac, and various ethical frameworks.<br>
+                    Outside of that, some other example consist of poetry, looking into psycology, and deep drives into music.
+                </p>
+            </div>
+
+            <!-- Use an image as well as an explaination of my hobby with pixel art -->
+            <div class="columnRight">
+=======
         <!-- Create a container for the next two rows, removing its padding and margin -->
         <div style="margin: 0; padding: 0;">
             <!-- Inside of this, talk aboutthe writing that I have done throughout the past two years while at SIU -->
@@ -48,16 +134,26 @@
 
             <!-- Use an image as well as an explaination of my hobby with pixel art -->
             <div class="row">
+>>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
                 <img src="./image/PixelArt.png">
 
                 <h2>Pixel Art</h2>
                 <p>
                     Something that I have exclusively done for fun would be pixel art, specifically GameBoy style sprites.<br>
                     I have been using this as an outlet whenever there's nothing else to work on, being something somewhat productive.<br>
+<<<<<<< HEAD
+                    At some point i am planning on using this in conjunction with my coding knowledge to make a small, simple test game.<br>
+                    Other examples of art I have done can be found at the top of the website, showing different works by mousing over the image.
+                </p>
+            </div>
+        </div>
+>>>>>>> Stashed changes
+=======
                     At some point i am planning on using this in conjunction with my coding knowledge to make a small, simple test game.
                 </p>
             </div>
         </div>
+>>>>>>> 7a92d23b8b5b27f4bf0aebb729beb9811c1e8d20
     </main>
 
     <footer>
