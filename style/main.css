@@ -84,6 +84,15 @@ label, input {
     margin:0 auto;
 }
 
+h2, p {
+    text-align: center;
+}
+
+ol, ol li {
+    text-align: center;
+    list-style-position: inside;
+}
+
 .row {
     max-width:85%;
     margin:10px auto 10px auto;
