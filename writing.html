@@ -10,6 +10,16 @@
     <!-- Add a meta description -->
     <meta name="description" content="This is the part of my portfolio that talks about past writing and artworks I have made.">
 
+    <!-- This is the JS code for the rollover image to work -->
+    <script language="javascript">
+        function MouseRollover(MyImage) {
+              MyImage.src = "./image/the_moon.png";
+          }
+        function MouseOut(MyImage) {
+              MyImage.src = "./image/nicolaas.png";
+          }
+    </script>
+
     <!-- Pull in Slicknav and all it needs to function -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./SlickNav/dist/slicknav.min.css" />
