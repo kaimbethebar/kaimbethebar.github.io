@@ -1,0 +1,17 @@
+@media print {
+    body {
+        border-radius: 0;
+        border: none;
+        max-width: 100%;
+        font-size: 20;
+    }
+
+    li {
+        border-radius: 0;
+    }
+
+    img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+}
